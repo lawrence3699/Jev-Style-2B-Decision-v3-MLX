@@ -27,7 +27,25 @@ tags:
 
 **Jev-Style decision series:** [v1 · 2B](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16) → [v2 · 2B](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16) → [v3 · 0.8B](https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX) → **v3 · 2B**
 
-<!-- PIP_SNIPPET_AFTER_0.3.0 -->
+<!-- PIP_SNIPPET (jev-style 0.3.0, added 2026-09-27) -->
+**Quickest start: the [jev-style](https://github.com/lawrence3699/jev-style) package** (0.3.0 or later; its `[mlx]` extra
+installs mlx-lm 0.31.3, the version this runtime requires) downloads these weights and serves a local `/v1/systemone` API:
+
+```bash
+pip install "jev-style[mlx]"
+jev-style serve --release 2b --precision 8bit      # or bf16 (the default); http://127.0.0.1:8765
+```
+
+```python
+from jev_style import JevStyle, choice, noul
+
+js = JevStyle.from_pretrained("chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX", precision="8bit")
+out = js.decide("I was charged twice. Please fix this ASAP.", {
+    "billing": noul("This ticket is about billing."),
+    "tone": choice("What is the customer's tone?", ["calm", "frustrated", "angry"]),
+})
+print(out["answers"]["billing"]["noul"], out["answers"]["tone"]["choice"])
+```
 
 **Jev-style decisions, now at 2B, native on Apple silicon.** These are the MLX builds of
 [Jev-Style-2B-Decision-v3](https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3): bf16 (3.76 GB) and
