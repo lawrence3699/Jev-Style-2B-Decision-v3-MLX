@@ -1,0 +1,23 @@
+{
+  "runtime_file": "jev_style_decision_mlx.py",
+  "runtime_sha256": "025daab9b374d740e743c519bd3aa3385791e08c81f4515b2ae525af57788030",
+  "shared_core_sha256": "56deae095206fc59b9a30d8626ac5d27cacddcd94d7c7f08f6f4bc53d326a002",
+  "what": "MLX bf16 (loaded from the repository root, precision bf16), runtime defaults",
+  "loaded_from": "runs/macjev/hf_staging/Jev-Style-2B-Decision-v3-MLX",
+  "verify_manifest": true,
+  "compared_with": {
+    "file": "runs/macjev/release_2b/parity/pred_mlx_bf16_base.jsonl",
+    "sha256": "c42232870ab8c5410b4f45dc85729249d467b9c0bd5d24213d085e4479a3a60e"
+  },
+  "fixture": {
+    "file": "runs/macjev/runtime_v2_dev/reference_base/fixture.jsonl",
+    "sha256": "2b16d25eafa70c00a1106ba51b94890821b51ecb4fa393abb12403c8739ef314"
+  },
+  "questions": 43,
+  "skipped_questions": 0,
+  "max_abs_score_diff": 0.0,
+  "top1_same": "43/43",
+  "token_or_overflow_mismatches": [],
+  "seconds": 137.2,
+  "finished_unix": 1790449492.3913028
+}

@@ -1,0 +1,190 @@
+{
+  "format": "jev-style-manifest-v1",
+  "repo": "chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX",
+  "created_unix": 1790476271.175225,
+  "files": {
+    "8bit/chat_template.jinja": {
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "bytes": 7755
+    },
+    "8bit/config.json": {
+      "sha256": "8865dd86a4e561e6b036667cd0d5c1c39ad12527b3feda7c585cf116d890477a",
+      "bytes": 2205
+    },
+    "8bit/generation_config.json": {
+      "sha256": "62153eb6c69f2e1f426beaa8002b7186437e949c7588167085df14e10e9c0a73",
+      "bytes": 116
+    },
+    "8bit/macjev_norms_fp32.safetensors": {
+      "sha256": "02f08c422228929c44dd84856678ea95d41401138aa56b1b771a654376d3e51c",
+      "bytes": 420112
+    },
+    "8bit/model.safetensors": {
+      "sha256": "184b4dda2f1285fe95a00a6271b364c861d370fbf913030f0259b2423f88a740",
+      "bytes": 2000043057
+    },
+    "8bit/model.safetensors.index.json": {
+      "sha256": "54d94d008c07e39846c0b454f68055622bb635a0623b51bce86d724e18733aab",
+      "bytes": 60786
+    },
+    "8bit/tokenizer.json": {
+      "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "bytes": 19989325
+    },
+    "8bit/tokenizer_config.json": {
+      "sha256": "95c557768e6b88a7128befc7bfd3c7de50e5d51af9b8b33a9f4dee0e04f99679",
+      "bytes": 1161
+    },
+    "LICENSE": {
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "bytes": 11544
+    },
+    "NOTICE": {
+      "sha256": "39ce15275bd1433d18dd09066e9045529a3c7f1a8c3e761d3f318041167e9fed",
+      "bytes": 2664
+    },
+    "README.md": {
+      "sha256": "965607319a7721d4eb497128179a740b2c9ca9516761c028c44fa8c6b4d20733",
+      "bytes": 13399
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "55ade7a70bb6bfcb8f0a8e9f4aef9222cde16c8bb44b6135aab6f929c706cbc5",
+      "bytes": 2146
+    },
+    "bf16/chat_template.jinja": {
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "bytes": 7755
+    },
+    "bf16/config.json": {
+      "sha256": "1dd31077b37706dc40e1bbddedf5eeba3e50e1d3c85d1fe34bfd5957a8d6ad14",
+      "bytes": 2000
+    },
+    "bf16/generation_config.json": {
+      "sha256": "62153eb6c69f2e1f426beaa8002b7186437e949c7588167085df14e10e9c0a73",
+      "bytes": 116
+    },
+    "bf16/macjev_norms_fp32.safetensors": {
+      "sha256": "a30e1a72d02598b405978c0eff08c3bfca3b523fa0b3d4b4c80d2a185e0b8081",
+      "bytes": 420112
+    },
+    "bf16/model.safetensors": {
+      "sha256": "00629c8d17ea115c21c3fc0d6ddc5d4aa02887343a8ff3b3cf79ab197624d574",
+      "bytes": 3763691755
+    },
+    "bf16/model.safetensors.index.json": {
+      "sha256": "d49d69fd9257879080337533c6051a14ff4f561a79b9f70d8bdb74e47444a306",
+      "bytes": 28024
+    },
+    "bf16/tokenizer.json": {
+      "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "bytes": 19989325
+    },
+    "bf16/tokenizer_config.json": {
+      "sha256": "95c557768e6b88a7128befc7bfd3c7de50e5d51af9b8b33a9f4dee0e04f99679",
+      "bytes": 1161
+    },
+    "config.json": {
+      "sha256": "1dd31077b37706dc40e1bbddedf5eeba3e50e1d3c85d1fe34bfd5957a8d6ad14",
+      "bytes": 2000
+    },
+    "figures/banner.data.json": {
+      "sha256": "397cbfb222986f8d59a65143f2fec5a11170385c661a86c5e54d890a24d7d89e",
+      "bytes": 1109
+    },
+    "figures/banner.png": {
+      "sha256": "2623e4afad36239aaa007c34350d6f2fbacb33430ffd3c36ce2f7ee7db849b47",
+      "bytes": 447467
+    },
+    "figures/jevbench.data.json": {
+      "sha256": "508994afea8d8b1bc33e25c675621a9b3b55b01f900daa688c240c8356dffe3b",
+      "bytes": 2387
+    },
+    "figures/jevbench.png": {
+      "sha256": "c8542dba9ecc1bd2a4ea3bda844cbc3fbd661c40d6eb9254098b279a92a74ce8",
+      "bytes": 167843
+    },
+    "figures/jevbench.svg": {
+      "sha256": "13193f8d636ad5e6685cbc58863f27bced87c0ead94c252917839c7c6eed837e",
+      "bytes": 12280
+    },
+    "figures/zeroshot.data.json": {
+      "sha256": "3ad81c3dc926c988db5c339eec4991c2e2cce46faafb89db99cc47d6d8737538",
+      "bytes": 1841
+    },
+    "figures/zeroshot.png": {
+      "sha256": "d51f9a7bc46b88d8dcf5ba46f15d479c781302ca531208ff0838106da8aae755",
+      "bytes": 137714
+    },
+    "figures/zeroshot.svg": {
+      "sha256": "f3234ba4715b0d87e081ec9fc52c0b409010612f54db7aa39307a9eda3b7545f",
+      "bytes": 13874
+    },
+    "jev_style_decision_mlx.py": {
+      "sha256": "025daab9b374d740e743c519bd3aa3385791e08c81f4515b2ae525af57788030",
+      "bytes": 54020
+    },
+    "readout_config.json": {
+      "sha256": "4af0d578c9126d4eb1a545b6e576e0a49a967243a47b8e99e3555f081fdaa1de",
+      "bytes": 2031
+    },
+    "release_config.json": {
+      "sha256": "eddb00c6bf6682f3f62d0c69ffa3ef3820454abd8bea092c7ecddece55f5b551",
+      "bytes": 17829
+    },
+    "requirements.txt": {
+      "sha256": "2dd1d057db2c4f0d906e3665745e85d4647be032e1ffd2cc94cea2db2104c329",
+      "bytes": 479
+    },
+    "validation/SOURCES.json": {
+      "sha256": "fa8510c5c1f3afbdb01a3da6f26500cfa3117b8f4e26ceaf788fbf1eca9a5639",
+      "bytes": 3165
+    },
+    "validation/latency_2b.json": {
+      "sha256": "458d00e0c81b3165072b8547278e6039b9ae0d45d54b7421008ef24c1d24ca3d",
+      "bytes": 40294
+    },
+    "validation/parity/PREDECLARED_RELEASE_GATES_2B.md": {
+      "sha256": "783aec77300779582911cdc57c71cf8b101b0cd5ca040073f7e1fa3ac20af08e",
+      "bytes": 2619
+    },
+    "validation/parity/compare_mlx_affine8-g64_base_vs_block.json": {
+      "sha256": "e1911f21ce73dd42d6c57e8349e2ec3221386a2b44ca461a3e50b9a69057ec34",
+      "bytes": 7697
+    },
+    "validation/parity/compare_mlx_affine8-g64_gate_vs_block.json": {
+      "sha256": "f0e2f44498df00945901c2a9bd5bff6f742d11ab243495c8089eaf0448fda782",
+      "bytes": 6494
+    },
+    "validation/parity/compare_mlx_bf16_base_vs_block.json": {
+      "sha256": "ca16e5281debaf1bc601b4a8c93cf6c1106f7b032f35c5833baa4fc8178def7c",
+      "bytes": 7408
+    },
+    "validation/parity/compare_mlx_bf16_gate_vs_block.json": {
+      "sha256": "7fa30fa414a4ffc12a7aa6371e77579845c3b816b90da3a813a70fec10ccd9fb",
+      "bytes": 6410
+    },
+    "validation/parity/cross_format_dp.json": {
+      "sha256": "c7332df0f02244416b01e49ecb037c76d4bf2643a2b42505ff1dfe896879e533",
+      "bytes": 1550
+    },
+    "validation/runtime/fixture_verify_8bit.json": {
+      "sha256": "305cc657c5ebd539ce92e3fbe7db36c594e40a0566d185b36dc858e338025d01",
+      "bytes": 3078
+    },
+    "validation/runtime/fixture_verify_bf16.json": {
+      "sha256": "87766f14dfdf9ac1d6d97692e523e3942329b4431615a46322992d1dbf315c63",
+      "bytes": 3077
+    },
+    "validation/runtime/render_verify.json": {
+      "sha256": "5333dd7e4083de7e80bd98b4da4d0965c2835782a37e836d55d0e09a26c4f8c1",
+      "bytes": 1550
+    },
+    "validation/runtime/reverify_mlx.json": {
+      "sha256": "1f6f62c8b66e8df2f738acfd96667ef746f9504328e603bdeaa848156ddf22bf",
+      "bytes": 963
+    }
+  },
+  "readme_hashed": true,
+  "readme_placeholder": false,
+  "note": "manifest.json hashes every file of the repo except itself, README.md, figures/ and validation/ included. The runtime --verify check (jev_style_decision_mlx.py) checks the top-level files (except README.md) and the selected precision folder (bf16/ or 8bit/), so either folder may be downloaded alone; README.md, figures/ and validation/ are not checked."
+}

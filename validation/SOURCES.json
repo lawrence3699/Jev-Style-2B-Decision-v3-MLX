@@ -1,0 +1,60 @@
+{
+  "note": "copies of the verification / benchmark records behind release_config.json and the model card; local absolute paths replaced by repository-relative ones (local_paths_scrubbed); source_sha256 = the unmodified file (equal to the published copy when local_paths_scrubbed is false)",
+  "files": {
+    "parity/compare_mlx_bf16_gate_vs_block.json": {
+      "source": "runs/macjev/release_2b/parity/compare_mlx_bf16_gate_vs_block.json",
+      "source_sha256": "7fa30fa414a4ffc12a7aa6371e77579845c3b816b90da3a813a70fec10ccd9fb",
+      "local_paths_scrubbed": false
+    },
+    "parity/compare_mlx_bf16_base_vs_block.json": {
+      "source": "runs/macjev/release_2b/parity/compare_mlx_bf16_base_vs_block.json",
+      "source_sha256": "ca16e5281debaf1bc601b4a8c93cf6c1106f7b032f35c5833baa4fc8178def7c",
+      "local_paths_scrubbed": false
+    },
+    "parity/compare_mlx_affine8-g64_gate_vs_block.json": {
+      "source": "runs/macjev/release_2b/parity/compare_mlx_affine8-g64_gate_vs_block.json",
+      "source_sha256": "f0e2f44498df00945901c2a9bd5bff6f742d11ab243495c8089eaf0448fda782",
+      "local_paths_scrubbed": false
+    },
+    "parity/compare_mlx_affine8-g64_base_vs_block.json": {
+      "source": "runs/macjev/release_2b/parity/compare_mlx_affine8-g64_base_vs_block.json",
+      "source_sha256": "e1911f21ce73dd42d6c57e8349e2ec3221386a2b44ca461a3e50b9a69057ec34",
+      "local_paths_scrubbed": false
+    },
+    "parity/cross_format_dp.json": {
+      "source": "runs/macjev/release_2b/parity/cross_format_dp.json",
+      "source_sha256": "c7332df0f02244416b01e49ecb037c76d4bf2643a2b42505ff1dfe896879e533",
+      "local_paths_scrubbed": false
+    },
+    "parity/PREDECLARED_RELEASE_GATES_2B.md": {
+      "source": "runs/macjev/runtime_v2_dev/PREDECLARED_RELEASE_GATES_2B.md",
+      "source_sha256": "783aec77300779582911cdc57c71cf8b101b0cd5ca040073f7e1fa3ac20af08e",
+      "local_paths_scrubbed": false
+    },
+    "runtime/fixture_verify_bf16.json": {
+      "source": "runs/macjev/runtime_v2_dev/verify_release_mlx/fixture_verify_bf16.json",
+      "source_sha256": "87766f14dfdf9ac1d6d97692e523e3942329b4431615a46322992d1dbf315c63",
+      "local_paths_scrubbed": false
+    },
+    "runtime/fixture_verify_8bit.json": {
+      "source": "runs/macjev/runtime_v2_dev/verify_release_mlx/fixture_verify_8bit.json",
+      "source_sha256": "305cc657c5ebd539ce92e3fbe7db36c594e40a0566d185b36dc858e338025d01",
+      "local_paths_scrubbed": false
+    },
+    "runtime/render_verify.json": {
+      "source": "runs/macjev/runtime_v2_dev/verify_release_mlx/render_verify.json",
+      "source_sha256": "5333dd7e4083de7e80bd98b4da4d0965c2835782a37e836d55d0e09a26c4f8c1",
+      "local_paths_scrubbed": false
+    },
+    "runtime/reverify_mlx.json": {
+      "source": "runs/macjev/hf_staging/_2b_tools/reverify_mlx.json",
+      "source_sha256": "1f6f62c8b66e8df2f738acfd96667ef746f9504328e603bdeaa848156ddf22bf",
+      "local_paths_scrubbed": false
+    },
+    "latency_2b.json": {
+      "source": "runs/macjev/release_2b/latency_2b.json",
+      "source_sha256": "458d00e0c81b3165072b8547278e6039b9ae0d45d54b7421008ef24c1d24ca3d",
+      "local_paths_scrubbed": false
+    }
+  }
+}

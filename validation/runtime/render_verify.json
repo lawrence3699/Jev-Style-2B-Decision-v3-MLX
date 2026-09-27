@@ -1,0 +1,88 @@
+{
+ "requests": 463,
+ "questions": 756,
+ "ok_identical": 743,
+ "budget_both": 6,
+ "error_both": 6,
+ "mismatch": [
+  {
+   "q_repr": "{'t': 'score', 'ins': '\\n', 'crit': [' <tool_response>', '\\n<tool_response>->', '<|box_start|>\\nOptions:\\nOption 2: ', '<tool_response> -> yesabc', '<|endoftext|><|endoftext|>Option 1 ->', '', '<|video_pad|>\ud83d\ude42Option 2: ', '<tool_call>Judge each numbered option in the complete catalogue above:\\n<think",
+   "state_repr": "'abc<|im_start|><|vision_pad|>Judge each numbered option in the complete catalogue above:\\n<think>\\n",
+   "id": "special:16",
+   "q": 0,
+   "ref": [
+    "ok",
+    245
+   ],
+   "rt": "error",
+   "ref_err": null,
+   "rt_err": [
+    "QuestionError"
+   ]
+  }
+ ],
+ "overflow_q": 17,
+ "max_tokens": 25600,
+ "max_k": 1000,
+ "prefix_path_mismatch": 0,
+ "boundary_head_lens": [
+  2046,
+  2047,
+  2048,
+  2095,
+  2096
+ ],
+ "state_prefix_lens": [
+  2047,
+  2048,
+  2049,
+  4095,
+  4096,
+  4097,
+  20479,
+  20480,
+  20481
+ ],
+ "overflow_budget_edge_total": 25600,
+ "budget_ids": [
+  "total_edge:18657",
+  "total_edge:18658",
+  "bigk:1500",
+  "maxlen:64",
+  "maxlen:300",
+  "huge_question"
+ ],
+ "error_ids": [
+  [
+   "ctrl:1",
+   "TypeError",
+   "TypeError"
+  ],
+  [
+   "score_11",
+   "RecordError",
+   "QuestionError"
+  ],
+  [
+   "score_1",
+   "RecordError",
+   "QuestionError"
+  ],
+  [
+   "choice_empty",
+   "RecordError",
+   "QuestionError"
+  ],
+  [
+   "choice_numkeys",
+   "ValueError",
+   "TypeError"
+  ],
+  [
+   "bad_type",
+   "RecordError",
+   "QuestionError"
+  ]
+ ],
+ "n_mismatch": 1
+}
