@@ -2,8 +2,9 @@
 license: apache-2.0
 base_model: chaoliangUNSW/Jev-Style-2B-Decision-v3
 base_model_relation: quantized
-library_name: mlx
+library_name: jev-style
 pipeline_tag: text-classification
+new_version: chaoliangUNSW/Jev-Style-2B-Decision-v4-MLX
 tags:
   - decision-model
   - decision-making
@@ -21,19 +22,32 @@ tags:
 
 # Jev-Style-2B-Decision-v3-MLX
 
-**[Try it in your browser →](https://huggingface.co/spaces/chaoliangUNSW/jev-style-2b)**
+<!-- jevstyle:project-links:start -->
+**Local classification, routing and fixed-choice scoring with JevStyle.**
 
-**Website:** [jevstyle.com](https://jevstyle.com/#v3-2b) · **GitHub:** [jev-style](https://github.com/lawrence3699/jev-style) · **Collection:** [all v3 builds and demos](https://huggingface.co/collections/chaoliangUNSW/jev-style-decision-v3-08b-2b-6ab87f32380cbd8c03b608b9)
+This is the text-only **2B v3** release (2026-09-27), maintained by Chaoliang Yan; it used no Jev outputs, and its training sources are documented on the main card. The current recommended release is **2B v4** (text and images), which was trained in part on soft labels distilled from TypeSafe Jev 1.14 through its public API. JevStyle is independently maintained, with no TypeSafe affiliation or endorsement. Training provenance is release-specific.
+
+**Official local installation — no hosted API key or agent simulation:** on Apple silicon install `python -m pip install -U "jev-style[mlx]"` and run `jev-style serve --release 2b-v3`; `--release 2b` now selects the 2B v4. The hosted API no longer serves this version. The package runs downloaded JevStyle weights on your machine. [Step-by-step installation and verification](https://jevstyle.com/guides/run-locally/). TypeSafe/OpenRouter Jev access and skills that simulate decisions with another agent model are separate execution paths.
+
+**Hosted service is separate from local inference.** Hosted API: operational. It serves the 2B v4 (text only; 8,192-token context, inputs up to 8,000 tokens). There is currently no fixed per-account quota: no daily request count and no per-minute cap. Capacity is shared, so a busy server answers 429 with a `Retry-After` header and clients should retry. Check [current service status](https://jevstyle.com/api/#service-status) or [live health](https://api.jevstyle.com/healthz) when using the hosted API.
+
+Choose a workflow: [Python text classification](https://jevstyle.com/guides/local-text-classification/), [local routing tools and Apple silicon](https://jevstyle.com/guides/local-decision-models/), [receipt or screenshot yes/no decisions](https://jevstyle.com/use-cases/local-vision-decisions/), [reproducible routing comparison](https://jevstyle.com/benchmarks/banking-routing/). These guides distinguish suitable alternatives and published evidence; they do not establish universal superiority.
+<!-- jevstyle:project-links:end -->
+
+
+**[Try the latest 2B v4 in your browser →](https://huggingface.co/spaces/chaoliangUNSW/jev-style-2b)** (this Space runs the 2B v4; the 2B v3 runs locally from this repository)
+
+**Website:** [jevstyle.com](https://jevstyle.com/models/) · **GitHub:** [jev-style](https://github.com/lawrence3699/jev-style) · **Collection:** [all v3 builds and demos](https://huggingface.co/collections/chaoliangUNSW/jev-style-decision-v3-08b-2b-6ab87f32380cbd8c03b608b9)
 
 **Jev-Style decision series:** [v1 · 2B](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16) → [v2 · 2B](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16) → [v3 · 0.8B](https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX) → **v3 · 2B**
 
-<!-- PIP_SNIPPET (jev-style 0.3.0, added 2026-09-27) -->
-**Quickest start: the [jev-style](https://github.com/lawrence3699/jev-style) package** (0.3.0 or later; its `[mlx]` extra
+<!-- PIP_SNIPPET (jev-style 0.3.0, added 2026-09-27; checked against 0.6.3 on 2026-11-05) -->
+**Quickest start: the [jev-style](https://github.com/lawrence3699/jev-style) package** (0.6.0 or later; pass `--release 2b-v3`, since `2b` now means the 2B v4; its `[mlx]` extra
 installs mlx-lm 0.31.3, the version this runtime requires) downloads these weights and serves a local `/v1/systemone` API:
 
 ```bash
 pip install "jev-style[mlx]"
-jev-style serve --release 2b --precision 8bit      # or bf16 (the default); http://127.0.0.1:8765
+jev-style serve --release 2b-v3 --precision 8bit   # or bf16 (the default); http://127.0.0.1:8765
 ```
 
 ```python
@@ -175,7 +189,9 @@ m.close()
   Use `jev_style_decision_mlx.py`.
 - **25,600 tokens** is the limit for the whole input (state + question + options + readout).
 - **Reduced-data training.** The model was trained on a reduced data pool (60M tokens).
-- **Decision Index.** Not run by us. The training pool includes the train splits of 7 of its benchmarks and
+- **Decision Index.** Our own complete run of Decision Index 0.2.1 scored **34.83**
+  ([chaoliangUNSW/decision-index-results](https://huggingface.co/datasets/chaoliangUNSW/decision-index-results)); the public [board](https://huggingface.co/spaces/multimodalart/jev-decision-index) listed the 2B v3 (Public
+  index 34.05) until 2026-11-04, when the 2B v4 replaced it. The training pool includes the train splits of 7 of its benchmarks and
   format-imitating data for 7 more, so results on these are not zero-shot; the 14 benchmarks that are not zero-shot
   for this model are named on the [main card](https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3#scope-and-limits).
 

@@ -4,7 +4,7 @@ This repository mirrors the public Hugging Face model at:
 
 <https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX>
 
-Snapshot of Hugging Face revision `b86e4cbc6f420f5d7d1691299d62db272934ebf4`.
+Snapshot of Hugging Face revision `a2df1e1632084c38b4c7dbfe1cf9bf8bc3fe5e35`.
 
 Files smaller than 100 MiB are stored on the `main` branch. Larger files are attached to this GitHub Release:
 
